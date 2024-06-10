@@ -345,7 +345,7 @@ class OtpPinFieldState extends State<OtpPinField>
       }
     } else {
       boxDecoration = BoxDecoration(
-          border: Border.all(color: fieldBorderColor, width: 2.0),
+          border: Border.all(color: fieldBorderColor, width: widget.otpPinFieldStyle!.fieldBorderWidth,),
           color: fieldBackgroundColor,
           borderRadius: BorderRadius.circular(
               widget.otpPinFieldStyle!.fieldBorderRadius));
